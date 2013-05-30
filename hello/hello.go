@@ -41,6 +41,7 @@ var guestbookTemplate = template.Must(template.New("book").Parse(guestbookTempla
 const guestbookTemplateHTML = `
 <html>
   <body>
+
     {{range .}}
       {{with .Author}}
         <p><b>{{.}}</b> wrote:</p>
